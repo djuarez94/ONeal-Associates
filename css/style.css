@@ -1212,7 +1212,7 @@ Media Queries CSS
 
   #atf .atfRight img {
     width: 100%;
-    padding-top: 2em;
+    padding-top: 4.5em;
     margin: 0px auto;
     display: block;
   }
@@ -1520,7 +1520,11 @@ Media Queries CSS
   .modal-header p {padding-left: 10px;}
 
   #contact {
-    padding-top: 3em;
+    padding-top: 6em;
+  }
+
+  #contact.navyBg {
+    padding-top: 1.5em;
   }
 
   #contactInfo .contactInfoBox {
@@ -1558,7 +1562,7 @@ Media Queries CSS
   }
 
   #atf {
-    padding-top: 2em;
+    padding-top: 1em;
   }
 
   #atf button {
