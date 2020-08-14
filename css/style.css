@@ -353,6 +353,14 @@ button.btn.btn-secondary:hover {
   color: var(--navy-bg-color);
 }
 
+#backToTop {
+  background-color: #031c4c;
+  margin-top: 4em;
+
+}
+
+#backToTop p {padding: 1.5em 0em;}
+
 /*-----
 Home CSS
 -------*/
@@ -1346,6 +1354,10 @@ Media Queries CSS
   }
 
   .teamAccordion .aboutContent button.btn.btn-primary {margin-bottom: 20px;}
+
+  footer {
+    padding-bottom: 0em;
+  }
 
   #about .aboutList, #about #aboutInfo {
     display: none;

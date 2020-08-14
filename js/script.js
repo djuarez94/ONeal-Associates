@@ -84,14 +84,21 @@ var accordionHeader = document.querySelectorAll('#aboutNav .card-header');
 
 for (var i = 0 ; i < accordionHeader.length; i++) {
 
-  accordionHeader[i].addEventListener("click", function(){
-    console.dir(this);
+  var firstChild = accordionHeader[0];
+  var secondChild = accordionHeader[1];
+  var thirdChild = accordionHeader[2];
 
-    if(this.classList === "active"){
-            this.classList.add('active');
-        }
-        else{
+  accordionHeader[i].addEventListener("click", function(){
+    // console.dir(firstChild);
+
+    if(this.classList == "card-header active"){
             this.classList.remove('active');
+        }
+        else {
+            firstChild.classList.remove('active');
+            secondChild.classList.remove('active');
+            thirdChild.classList.remove('active');
+            this.classList.add('active');
         }
 
   });
