@@ -1162,6 +1162,7 @@ Media Queries CSS
     width: 80%;
   }
 }
+
 @media only screen and (max-width: 790px) {
 
   #atfServices {padding-top: 3em;}
@@ -1224,6 +1225,10 @@ Media Queries CSS
     text-align: center;
   }
 
+  #about .col-md-6 {
+    background-color: rgba(239, 239, 239,0);
+  }
+
   #services .serviceBox {
     margin-bottom: 7em;
     margin-left:  2%;
@@ -1237,6 +1242,42 @@ Media Queries CSS
   #clients .clientBox {
     margin-bottom: 3em;
     width: 90%;
+  }
+
+  #contactInfo.mobile .contactInfoBox {
+    width: 300px;
+  }
+
+  #contactInfo.mobile .contactInfoBox a {
+    color: var(--navy-text-color);
+    text-decoration: underline;
+    font-size: 18px;
+    transition: .2s;
+  }
+
+  #contactInfo.mobile .contactInfoBox h4 {
+    color: var(--navy-text-color);
+  }
+
+  #contactInfo.mobile .contactInfoBox .infoBoxOverlay {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #contactInfo.mobile .contactInfoBox img {width: 80%; padding-bottom: 0px;}
+
+  #contactInfo.mobile .contactInfoBox .infoBoxOverlay h3 {
+    padding-bottom: 5px;
+  }
+
+  #contactInfo.mobile .contactInfoBox a:hover {
+    opacity: .8;
+  }
+
+  #contactInfo.mobile button {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
   }
 
   .teamAccordion {
@@ -1311,8 +1352,8 @@ Media Queries CSS
   }
 
   #about .col-md-6 {
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   #contact h2 {
@@ -1346,6 +1387,22 @@ Media Queries CSS
 
   #about .serviceContent {
     margin-bottom: 3em;
+  }
+
+  .carousel-control-next {
+    right: 0;
+    width: 70px;
+    height: 50px;
+    top: 105%;
+    background-color: var(--gold-bg-color);
+  }
+
+  .carousel-control-prev {
+    left: 0;
+    width: 70px;
+    height: 50px;
+    top: 105%;
+    background-color: var(--gold-bg-color);
   }
 
   #clients {
@@ -1382,6 +1439,11 @@ Media Queries CSS
     text-decoration: underline;
     transition: .2s;
     color: var(--navy-text-color);
+  }
+
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .modal-content {
@@ -1430,7 +1492,11 @@ Media Queries CSS
     transform: translateY(0%);
   }
 
-  #aboutContent #aboutContentBox p {text-align: center; padding-bottom: 10px;}
+  #aboutContent #aboutContentBox p {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 45px;
+  }
 
   #aboutContentBox button.btn.btn-primary {
     margin: 0px auto;
@@ -1487,7 +1553,32 @@ Media Queries CSS
     padding-bottom: 2.5em;
   }
 
+  button.btn.btn-primary, button.btn.btn-secondary {
+    width: 100%!important;
+  }
+
+  #atf {
+    padding-top: 2em;
+  }
+
+  #atf button {
+    width: 100%;
+  }
+
+  #atf button.btn.btn-primary {
+    margin-bottom: 1em;
+    margin-top: .5em;
+  }
+
+  #aboutNav {
+    padding: 20px;
+  }
+
   #clients .clientBox {
     width: 300px;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  #aboutNav #teamAccordion .card-title h3 {font-size: 20px; padding-left: 10px;}
 }

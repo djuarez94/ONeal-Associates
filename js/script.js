@@ -37,7 +37,7 @@ for (var i = 0 ; i < clientBox.length; i++) {
 
 }
 
-//About Content Reveal : Home
+//About Content Reveal : Home : Desktop
 var aboutListItem = document.querySelectorAll('.aboutList li');
 var team = document.getElementById('team');
 var experience = document.getElementById('experience');
@@ -77,6 +77,24 @@ for (var i = 0 ; i < aboutListItem.length; i++) {
     }
   });
 
+}
+
+//About Content Reveal : Home : Mobile
+var accordionHeader = document.querySelectorAll('#aboutNav .card-header');
+
+for (var i = 0 ; i < accordionHeader.length; i++) {
+
+  accordionHeader[i].addEventListener("click", function(){
+    console.dir(this);
+
+    if(this.classList === "active"){
+            this.classList.add('active');
+        }
+        else{
+            this.classList.remove('active');
+        }
+
+  });
 }
 
 // Solutions Reveal : Services
@@ -301,5 +319,7 @@ for (var i = 0 ; i < teamMembers.length; i++) {
   });
 
 }
+
+//Solution Content Reveal : Home
 
 });
