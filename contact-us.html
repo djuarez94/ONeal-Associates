@@ -14,8 +14,8 @@
   <body>
     <header>
       <div id="CTA" class="brand-gold-bg">
-        <p class="desktop"><i class="fa fa-phone"></i>  Call Us Now For A <span>FREE</span> 1 Hour Consultation: <a href="#">(323)323-3232</a></p>
-        <p class="mobile"><i class="fa fa-phone"></i>  Call Now For A <span>FREE</span> 1 Hour Consultation: <br><a href="#">(323)323-3232</a></p>
+        <p class="desktop"><i class="fa fa-phone"></i>  Call Us Now For A <span>FREE</span> 1 Hour Consultation: <a href="tel:1-562-357-6677">(562) 357-6677</a></p>
+        <p class="mobile"><i class="fa fa-phone"></i>  Call Now For A <span>FREE</span> 1 Hour Consultation: <br><a href="tel:1-562-357-6677">(562) 357-6677</a></p>
       </div>
       <nav class="navbar navbar-expand-sm bg-dark">
         <div class="container">
@@ -94,40 +94,46 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="contactInfoBox">
+            <div data-aos="fade-up" data-aos-duration="900" class="contactInfoBox">
               <img src="imgs/direct-email-address-icon.png" alt="direct-email-address-icon">
               <h3>Direct Email</h3>
               <div class="infoBoxOverlay">
-                <span>jessica<br>@onealprofessionals.com</span>
+                <a href="mailto:jessica@onealprofessionals.com">
+                  <span>jessica<br>@onealprofessionals.com</span>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="contactInfoBox">
+            <div data-aos="fade-up" data-aos-duration="900" class="contactInfoBox">
               <img src="imgs/phone-call-icon.png" alt="phone-call-icon">
               <h3>Phone Number</h3>
               <div class="infoBoxOverlay">
-                <span>323.344.3434</span>
+                <a href="tel:1-562-357-6677">
+                  <span>(562) 357-6677</span>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="contactInfoBox">
+            <div data-aos="fade-up" data-aos-duration="900" class="contactInfoBox">
               <img src="imgs/gps-location-icon.png" alt="gps-location-icon">
               <h3>Business Address</h3>
               <div class="infoBoxOverlay">
-                <span>1045 N. Azusa Ave, Bellflower CA</span>
+                <a href="https://goo.gl/maps/r6oQzUFcjpmdU3do8" target="_blank">
+                  <span>1045 N. Azusa Ave, Bellflower CA</span>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="contactInfoBox">
+            <div data-aos="fade-up" data-aos-duration="900" class="contactInfoBox">
               <img src="imgs/calendar-icon.png" alt="calendar-icon">
               <h3>Business Hours</h3>
               <div class="infoBoxOverlay">
-                <span>Monday-Friday: 7AM - 5PM PDT</span>
-                <br>
-                <span>Saturday-Sunday: CLOSED</span>
+                <span>Monday-Friday: 2AM - 7PM PDT</span>
+                <span>Saturday: 9AM - 12PM PDT</span>
+                <span>Sunday: CLOSED</span>
               </div>
             </div>
           </div>
@@ -167,8 +173,11 @@
                 <a href="contact-us.html">Contact Us</a>
               </li>
               <li>
-                <img src="imgs/gold-email-icon.png" alt="gold-email-icon">
-                <p>jessica@onealprofessionals.com</p>
+                <a href="mailto:jessica@onealprofessionals.com">
+                  <img src="imgs/gold-email-icon.png" alt="gold-email-icon">
+                  <p>jessica@onealprofessionals.com</p>
+                </a>
+
               </li>
               <li id="socialFooter">
                 <a href="#">
@@ -200,6 +209,11 @@
             <p id="copyright">Copyright &copy; 2020 O'Neal &amp; Associates • All Rights Reserved • Bellflower, CA</p>
           </div>
         </div>
+      </div>
+      <div id="backToTop" class="mobile">
+        <a href="#CTA">
+          <p>Back To Top  <i style="color: var(--gold-bg-color)" class="fa fa-arrow-up"></i></p>
+        </a>
       </div>
     </footer>
     <!-- jQuery library -->
