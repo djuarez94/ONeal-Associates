@@ -98,6 +98,8 @@ p, li {
 
 p {font-size: 24px;}
 
+li {font-size: 20px;}
+
 .mobile {display: none;}
 .desktop {display: block;}
 
@@ -841,6 +843,8 @@ Services CSS
   position: relative;
 }
 
+#serviceCarousel .carouselBox .carouselContent button {margin-left: 20px;}
+
 #serviceCarousel .carouselBox .carouselContentContainer {
   background-color: var(--gold-bg-color);
   position: absolute;
@@ -1542,9 +1546,11 @@ Media Queries CSS
     padding-bottom: 20px;
   }
 
+  #aboutContent {top: 50px;}
+
   #aboutContent #aboutContentBox {
     position: relative;
-    top: 30px;
+    top: 0px;
     left: 0px;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
