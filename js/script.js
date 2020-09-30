@@ -238,9 +238,17 @@ var member1 = document.getElementById('member1');
 
 for (var i = 0 ; i < teamMembers.length; i++) {
 
+
+
   teamMembers[i].addEventListener("click", function(e){
-    console.dir(this.attributes[0].nodeValue);
+    console.dir(this.firstElementChild);
+
+
+
+
     if (this.attributes[0].nodeValue === "tm1") {
+      this.firstElementChild.classList.add('active');
+
       member1.style.display = "block";
       member1.classList.add('fadeIn');
       member2.style.display = "none";
@@ -255,6 +263,8 @@ for (var i = 0 ; i < teamMembers.length; i++) {
       member6.classList.remove('fadeIn');
     }
     else if (this.attributes[0].nodeValue === "tm2") {
+      this.firstElementChild.classList.add('active');
+
       member1.style.display = "none";
       member1.classList.remove('fadeIn');
       member2.style.display = "block";
@@ -269,6 +279,8 @@ for (var i = 0 ; i < teamMembers.length; i++) {
       member6.classList.remove('fadeIn');
     }
     else if (this.attributes[0].nodeValue === "tm3") {
+      this.firstElementChild.classList.add('active');
+
       member1.style.display = "none";
       member1.classList.remove('fadeIn');
       member2.style.display = "none";
@@ -283,6 +295,8 @@ for (var i = 0 ; i < teamMembers.length; i++) {
       member6.classList.remove('fadeIn');
     }
     else if (this.attributes[0].nodeValue === "tm4") {
+      this.firstElementChild.classList.add('active');
+
       member1.style.display = "none";
       member1.classList.remove('fadeIn');
       member2.style.display = "none";
@@ -297,6 +311,8 @@ for (var i = 0 ; i < teamMembers.length; i++) {
       member6.classList.remove('fadeIn');
     }
     else if (this.attributes[0].nodeValue === "tm5") {
+      this.firstElementChild.classList.add('active');
+
       member1.style.display = "none";
       member1.classList.remove('fadeIn');
       member2.style.display = "none";
@@ -311,6 +327,8 @@ for (var i = 0 ; i < teamMembers.length; i++) {
       member6.classList.remove('fadeIn');
     }
     else if (this.attributes[0].nodeValue === "tm6") {
+      this.firstElementChild.classList.add('active');
+
       member1.style.display = "none";
       member1.classList.remove('fadeIn');
       member2.style.display = "none";
